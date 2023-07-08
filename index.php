@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,13 +16,35 @@
 </head>
 <body>
 
-<header class="flex-row">
+<!-- header -->
+<header class="flex">
   <h1 class="name-page">Home</h1>
-  <nav class="flex-row">
+  <nav class="flex">
     <a href="" class="active">Home</a>
     <a href="about.php">About</a>
   </nav>
 </header>
+<!-- body -->
+<section class="contact">
+    <h1 class="heading">
+      <span>Contact me</span>
+    </h1>
+    <?php
+      if(isset($_POST['submit'])) {
+
+        $name= $_POST['name'];
+        echo "<p class='message'>Message send!</p>";
+      }
+    ?>
+    <form action="" method="post">
+      <div class="flex-col">
+        <input type="text" name="name" class="name" placeholder="Name..." required>
+        <input type="email" name="email" class="email" placeholder="Email..." required>
+        <textarea name="mesage" class="email" placeholder="Message..."></textarea>
+        <input type="submit" class="btn-submit" name="submit" value="Send"/>
+      </div>
+    </form>
+  </section>
   
 </body>
 </html>
