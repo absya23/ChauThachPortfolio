@@ -63,4 +63,5 @@ _You can contact me if you have any feedbacks or questions about this project vi
 
 - **Gmail:**: thachnc2002@gmail.com
 - **Linkedin**: [chauthach-nguyen](https://www.linkedin.com/in/chauthach-nguyen)
-  _Or you can raise an issue in this GitHub repository._
+
+_Or you can raise an issue in this GitHub repository._
